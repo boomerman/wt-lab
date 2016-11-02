@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>alerts in js</title>
+</head>
+<body>
+<h1>In this demonstration we are going to know about dialog boxes in javascript</h1>
+<button onClick="alertbox()"> i AM a alert box</button><br>
+<button onClick="cnfrmbox()"> i AM a confirm box</button><br>
+<p id="demo"></p>
+<button onClick="dialogbox()"> i AM a dialogue box</button><br>
+
+<p id="yo"></p>
+</body>
+
+<script>
+function alertbox() {
+    alert("OMG!! i am an alert..!! dont dare to touch me again!! disturb the next one :'(");
+}
+function cnfrmbox() {
+    var x;
+    if (confirm("hey myself confirm box..  ") == true) {
+        x = "have a nyc day";
+    } else {
+        x = "urrrggghhh!!!  i hate you!!! ";
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+
+
+function dialogbox() {
+    var person = prompt("Please enter your name", "type your name");
+    
+    if (person != null) {
+        document.getElementById("yo").innerHTML =
+        "Hello " + person + "!!! dont dare to disturb me too huh";
+    }
+}
+</script>
+
+</html>

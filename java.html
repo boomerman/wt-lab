@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>various arithmatic opt on variables using javvascript</title>
+	<style>
+		
+
+
+
+	</style>
+</head>
+
+<body>
+<p> adding 5 and 9 we get= </p><p id="add"></p>
+<p> subtracting 7 and 3 we get= </p><p id="sub"></p>
+<p> multiplying 5 and 9 we get= </p><p id="mul"></p>
+<p> dividing 5 and 9 we get= </p><p id="div"></p>
+<p> modulus of 5 and 9 is= </p><p id="mod"></p>
+<p> incrementing 5  we get= </p><p id="inc"></p>
+<p> decrementing 9 we get= </p><p id="dec"></p>
+
+</body>
+<script type="text/javascript">
+
+
+
+var x=5;
+var y=9;
+var s=x+y;
+var x1=7;
+var y1=3;
+var sub=x1-y1;
+var mul=x*y;
+var div=x/y;
+var mod=x % y;
+x++;
+var inc= x;
+y--;
+var dec= y;
+document.getElementById("add").innerHTML = s;
+document.getElementById("sub").innerHTML = sub;
+document.getElementById("mul").innerHTML = mul;
+document.getElementById("div").innerHTML = div;
+document.getElementById("mod").innerHTML = mod;
+document.getElementById("inc").innerHTML = inc;
+document.getElementById("dec").innerHTML = dec;
+
+
+
+
+</script>
+</html>
